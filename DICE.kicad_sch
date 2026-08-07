@@ -4849,6 +4849,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 182.88) (xy 349.25 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08097661-854f-4d68-b55b-e3ed193cb1a2")
+	)
+	(wire
+		(pts
 			(xy 356.87 80.01) (xy 354.33 80.01)
 		)
 		(stroke
@@ -7519,6 +7529,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 209.55) (xy 360.68 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f662120d-b8bf-4193-acf2-10a98637b5e0")
+	)
+	(wire
+		(pts
 			(xy 229.87 129.54) (xy 226.06 129.54)
 		)
 		(stroke
@@ -7616,6 +7636,16 @@
 			(type default)
 		)
 		(uuid "fe29baad-2fd9-41ce-adea-d196093e84a2")
+	)
+	(wire
+		(pts
+			(xy 368.3 233.68) (xy 368.3 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4a0052-cc23-4e7d-9ea9-8c83db5acc34")
 	)
 	(wire
 		(pts
@@ -9306,6 +9336,82 @@
 			(project "Random2"
 				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 368.3 226.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c304f6d-185c-48d8-87a5-65be6d8df02d")
+		(property "Reference" "D116"
+			(at 374.9675 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 374.9675 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 368.3 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.3 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 368.3 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 368.3 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7213f24f-11ec-4ce1-9a70-1ff3f5091e11")
+		)
+		(pin "2"
+			(uuid "02ee52fd-de4b-42ac-8764-c3f5d3bba520")
+		)
+		(instances
+			(project "DICE"
+				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
+					(reference "D116")
 					(unit 1)
 				)
 			)
@@ -15243,6 +15349,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 368.3 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9af1dcfb-0cfc-4bde-a5c3-be3e2a4bd152")
+		(property "Reference" "#PWR0142"
+			(at 368.3 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 368.3 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 368.3 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 368.3 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 368.3 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5e65964-e56e-4611-a066-0f94788cb89d")
+		)
+		(instances
+			(project "DICE"
+				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 181.61 134.62 180)
 		(unit 1)
@@ -15784,6 +15955,74 @@
 			(project "Random2"
 				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
 					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 368.3 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8177777-335c-49d9-b430-024373ec3c45")
+		(property "Reference" "R133"
+			(at 370.84 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 372.11 219.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 366.522 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.3 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 368.3 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d9a808a-76ac-446a-a578-6c48553b901c")
+		)
+		(pin "2"
+			(uuid "05dc0735-fd87-4e21-b330-6fa0eb98c398")
+		)
+		(instances
+			(project "DICE"
+				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
+					(reference "R133")
 					(unit 1)
 				)
 			)
@@ -20509,6 +20748,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC847")
+		(at 365.76 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9f116cb-6891-4042-ad34-88e4814ae61f")
+		(property "Reference" "Q103"
+			(at 370.84 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC847"
+			(at 370.84 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 370.84 211.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+			(at 365.76 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 365.76 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 365.76 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 365.76 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45866eef-370c-42b4-90f2-14b8bad39873")
+		)
+		(pin "3"
+			(uuid "c1aa4641-b428-4afe-a065-5fdc48f45157")
+		)
+		(pin "2"
+			(uuid "5ae16d5d-6c51-4320-b5f7-84a2c5ad217c")
+		)
+		(instances
+			(project "DICE"
+				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
+					(reference "Q103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 114.3 85.09 0)
 		(unit 1)
@@ -20781,6 +21113,71 @@
 			(project "Random2"
 				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
 					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 368.3 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba5f504-b02a-405c-ae31-88b494f836df")
+		(property "Reference" "#PWR0141"
+			(at 368.3 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 368.3 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 368.3 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 368.3 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 368.3 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1663a6d5-2b88-4353-b80f-40893c61df85")
+		)
+		(instances
+			(project "DICE"
+				(path "/0cf56c90-25a6-4144-816f-21e51d9dd6ff"
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
